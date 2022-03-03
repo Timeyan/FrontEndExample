@@ -1,0 +1,160 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+.mainField{
+	display: flex; 
+	flex-direction: column; 
+    text-align: center;
+	padding-top: 20px;
+}
+.header{
+	border: 0px;
+	font-family: Fette, sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+	color: black;
+}	
+.miniHead{
+	border: 0px;	
+	margin-bottom: 15px;
+	margin-top: 10px;
+	font-family: Fette, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	color: black;
+}	
+.mainHead{
+	border: 0px;	
+	margin-bottom: 10px;
+	margin-top: 0px;
+	font-size: 70px;
+	font-weight: normal;
+	color: black;
+}		
+.weather{
+	padding: 0px;
+	margin-right: 5px;
+	width: 170px;
+	min-height: 315px;
+}
+.currency{
+	padding: 0px;
+	margin-right: 5px;
+	width: 170px;
+	min-height: 565px;
+}
+.weathField {
+	padding: 0px;
+	width: 170px;
+	margin-right: 5px;
+	min-height: 210px;
+	margin-bottom: 5px;
+	font-family: weather;
+}
+.currField {
+	padding: 0px;
+	width: 170px;
+	margin-right: 5px;
+	margin-top: 10px;
+	min-height: 100px;
+	margin-bottom: 5px;
+}
+
+.weathPos {
+	font-size: 13px;
+	font-family: weather2;
+	margin-bottom: 3px;
+}
+.currPos {
+	font-size: 13px;
+	font-family: weather2;
+	margin-bottom: 4px;
+}
+.text{
+	text-indent: 25px;
+	margin-left: 25px;
+	text-align: justify;
+	font-size: 1.2rem;
+}
+.str{
+	margin-bottom: 10px;
+}
+.pic{
+	text-align: center;
+}
+.footer{
+	border: 0px;		
+	font-size: 19px;
+	opacity: 50%;	
+	vertical-align: middle;
+	text-align: center;
+	font-family: Fette, sans-serif;	
+}
+
+@font-face {
+	font-family: "Fette";
+	src: url("fonts/DSFetteKanzlei.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "weather";
+	src: url("fonts/20211.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "weather2";
+	src: url("fonts/3.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+.left {
+	display: inline-flex;
+	flex-direction: column;
+	flex: 1 0 100px;
+	width: 20%;
+	align-content: flex-start;
+}
+
+.container {
+ display: inline-flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ padding: 30px;
+}
+
+input[type=submit] {
+    padding: 1rem; 
+    font-size: 1rem;
+}
+
+ul.links {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+ul.links li {
+	font-size: 20px;
+	padding: 10px;
+	margin: 10px;
+}
+
+ul.links li a{
+	text-decoration: none;
+}
+
+.overview {
+	text-align: center;
+	flex: 1 0 600px;
+	padding: 20px;
+	width: 40%;
+}

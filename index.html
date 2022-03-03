@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Homework HTML</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+	<body>
+		<div class="mainField">
+			<div class="header">
+				<h1 class="mainHead">Schecter</h1> 
+				BlackJack ATX C-7</div>
+            </div>
+			<div class="container">
+                <div class="left">
+                    <div class="nav">
+                        <h3 class="miniHead">Links:</h3>
+    					<ul class="links">
+    						<li>
+    							<a href="https://www.schecterguitars.com/vault/blackjack-atx-c-7-detail/" target="_blank">Описание</a>
+    						</li>
+    						<li>
+    							<a href="https://guitarplayer.ru/equipment-guitars/obzor-schecter-blackjack-c-7/" target="_blank">Обзор</a>
+    						</li>
+    						<li>
+    							<a href="https://market.yandex.ru/product--elektrogitara-schecter-blackjack-atx-c-7/7021476?clid=703&cpa=1" target="_blank">Купить</a>
+    						</li>
+    					</ul>
+                    </div>
+                    <div class="weather">
+                        <fieldset>
+                            <legend>Прогноз погоды</legend>
+                            <div class="weathField"></div>
+                            <button id="upd" style="padding: 1rem; font-size: 1rem;">Обновить</button>
+                        </fieldset>
+                    </div>
+                    <div class="currency">
+                        <fieldset>
+                            <legend>Курс Валют</legend>
+                            <div class="currField"></div>
+                            <button id="upd2" style="padding: 1rem; font-size: 1rem;">Обновить</button>
+                        </fieldset>
+                    </div>
+                </div>
+				<div class="overview">
+					<p class="text">
+						В данном опусе я бы хотел поделиться своими впечатлениями об элетрогитаре <b>Schecter BlackJack ATX C-7</b>. Инструмент, как мне кажется, действительно достойный внимания.
+					</p>
+					<p class="pic">
+						<img src="images/schecter-blackjack-atx-c-7-awht-usa.jpg" width="610" alt="Электрогитара">
+					</p>
+					<p class="text">
+						Всё началось с того, что я захотел обзавестись новой электрогитарой, семиструнной, для игры более тяжелой музыки, нежели я играл ранее. После долгих раздумий мой выбор пал на модель компании Schecter (Omen 7). Я оформил заказ и дождался доставки. 
+					</p>
+					<p class="text">
+						Моей радости не было предела, но это продлилось недолго. Оказалось в гитаре заводской брак. Отнес инструмент к опытному гитарному мастеру, который сказал мне, что разумнее будет просто сдать (и, самое главное, дешевле). Но ведь гитару то хочется...
+					</p>
+					<p class="text">
+						Неудавшуюся покупку я сдал и снова начал шерстить интернет. В итоге остановился на другой модели этой же фирмы: Demon 7. Тянуть долго не буду - у нее также оказался брак. Мастер смотрит на меня ехидно и говорит: "Зачем ты вообще шектеры покупаешь, да еще и новые, лучше посмотри б/у LTD или Ibanez". Он мне объяснил, почему новые гитары вообще не стоит брать, а также сказал, что если уж я хочу Schecter, то лучше брать BlackJack (также б/у): уж она точно не подведет. По его словам - эталонная модель. 
+					</p>
+					<p class="text">
+						Пришлось искать на авито семиструнные гитары. Нашел я именно эту гитару Schecter. Уже совсем не хотелось брать инструмент этой компании, разочарование было сильно. Но ведь знающий человек говорил, что она хороша... Решил, что на третий раз должно повести и заказал ее (история, как я ее получал из Сочи, где нет авито доставки, заслуживает отдельного опуса).
+					</p>
+					<p class="text">
+						В итоге это оказалась реально достойная гитара из дорогих материалов, с хорошими звукоснимателями и уникальными конструктивными особенностями за цену нового ширпотреба, который я покупал ранее. И звучит она, конечно, мое почтение, дамы и господа.
+					</p>
+					<p class="text">
+						Если вдруг кому-то занадобится семиструнная электрогитара, то я однозначно буду советовать именно эту (если они, конечно, смогут ее найти :))
+					</p>
+				</div>
+
+                <div class="survey">
+                    <h3 class="miniHead">Form:</h3>
+                    <fieldset>
+                        <legend>Опрос об игре на гитаре</legend>
+                        <p>
+                            1. Играете ли Вы на гитаре?
+                        </p>
+                        <form method="post" action="http://localhost/play/guitar">
+                            <p>
+                                <input type="radio" value="Yes" name="yes"> Да
+                            </p>
+                            <p>
+                                <input type="radio" value="No" name="no"> Нет
+                            </p>
+                            <p>
+                                <input type="submit" value="Отправить">
+                            </p>
+                        </form>
+                        <br>
+                        <p>
+                            2. Какой вид гитары предпочитаете?
+                        </p>
+                        <div id="root2"></div>
+                        <br>
+                        <p>
+                            3. Гитарам какой фирмы вы бы отдали свое предпочтение?
+                        </p>
+                        <form method="post" action="http://localhost/load/answers">
+                            <p>
+                                <input type="checkbox" id="Schecter" name="Schecter"> Schecter
+                            </p>
+                            <p>
+                                <input type="checkbox" id="Ibanez" name="Ibanez"> Ibanez
+                            </p>
+                            <p>
+                                <input type="checkbox" id="LTD" name="LTD"> LTD
+                            </p>
+                            <p>
+                                <input type="checkbox" id="Jackson" name="Jackson"> Jackson
+                            </p>
+                            <p>
+                                <input type="checkbox" id="AlinaPro" name="Alina Pro"> Alina Pro
+                            </p>
+                            <p>
+                                <input type="submit" value="Отправить">
+                            </p>
+                        </form>
+                        <br>
+                        <p>
+                            Оцените сайт:)
+                        </p>
+                        <div id="root"></div>
+                        </form>
+                    </fieldset>
+                </div>
+			</div>
+			<div class="footer">Copyright © 2021 Kopats Alexey.</div>
+		</div>
+
+        <script src="ajax.js"></script>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>      
+        <script type="text/babel">
+            class GradeForm extends React.Component {
+                constructor(props){
+                    super(props);
+                    
+                    this.state = { value: '0' };
+
+                    this.handleChange = this.handleChange.bind(this);
+                    this.handleSubmit = this.handleSubmit.bind(this);
+                }
+
+                handleChange(event){
+                    this.setState({ value: event.target.value });   
+                }
+                
+                handleSubmit(event){
+                    var state = this.state.value
+                    if (state == 5) {
+                        alert('Спасибо за Вашу оценку! Рады, что Вам нравится!');
+                    } else if (state == 4){
+                        alert('Спасибо за оценку! Мы обязательно сделаем лучше!');
+                    } else if (state == 1 || state == 0 || state == 2) {
+                        alert('Спасибо за честную оценку! Мы обязательно попытаемся исправить ситуацию в дальнейшем!')
+                    } else {
+                        alert('Спасибо за оценку! Нам еще есть куда расти.');
+                    }
+                    event.preventDefault();
+                }
+                
+                render() {
+                    return(
+                        <div className='ball'>
+                            <form onSubmit={this.handleSubmit}>
+                                <p>
+                                    0<input type="range" min="0" max="5" step="1" value={this.state.value} onChange={this.handleChange} name="grade" />5
+                                </p>
+                                <p>
+                                    <input type="submit" value="Отправить" />
+                                </p>
+                            </form>
+                        </div>
+                    );
+                }
+            }
+
+
+
+            class Guitars extends React.Component {
+                constructor(props){
+                    super(props);
+                    
+                    this.state = { value: 'NAN' };
+                    
+                    this.handleChange = this.handleChange.bind(this);
+                    this.handleSubmit = this.handleSubmit.bind(this);
+                }
+                
+                handleSubmit(event){
+                    var state = this.state.value
+                    if (state == 'NAN') {
+                        alert('Вам не нужна гитара');
+                    } else {
+                        alert('Вам нужна гитара: ' + state);
+                    }
+                    event.preventDefault();
+                }
+
+                handleChange(event){
+                    this.setState({ value: event.target.value });   
+                }
+                
+                render() {
+                    return(
+                        <div className='guitar'>
+                            <form onSubmit={this.handleSubmit}>
+                                <select id="subject" name="subject" value={this.state.value} onChange={this.handleChange}>
+                                    <option value="Acoustic">Акустическая</option>
+                                    <option value="Electro">Электрогитара</option>
+                                    <option value="Bass">Бас</option>
+                                    <option value="Ukulele">Укулеле</option>    
+                                    <option value="NAN">Не играю на гитаре</option>                 
+                                </select>
+                                <p>
+                                    <input type="submit" value="Отправить" />
+                                </p>
+                            </form>
+                        </div>
+                    );
+                }
+            }
+
+
+
+            ReactDOM.render(<Guitars />, document.getElementById("root2"));
+            ReactDOM.render(<GradeForm />, document.getElementById("root"));
+        </script>
+	</body>
+</html>
